@@ -1,7 +1,7 @@
 import igraph as ig
 import matplotlib.pyplot as plt
 
-def geraGrafo(data):
+def gerarGrafo(data):
     nVertices = data.shape[0]
 
     arestas = [(i, j, data[i, j]) for i in range(nVertices) for j in range(i + 1, nVertices) if data[i, j] > 0]

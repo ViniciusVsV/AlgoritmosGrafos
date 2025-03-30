@@ -1,7 +1,7 @@
 from Funcoes.lerMatriz import lerMatriz
 from Funcoes.salvarDados import salvarDados
-from Funcoes.imprimeMatriz import imprimeMatriz
-from Funcoes.geraGrafo import geraGrafo
+from Funcoes.imprimirMatriz import imprimirMatriz
+from Funcoes.gerarGrafo import gerarGrafo
 
 while True:
     instancia = str(input("Digite o nome da instância a ser processada: "))
@@ -13,8 +13,8 @@ while True:
         print("Dataset não encontrado")
         continue
 
-    imprimeMatriz(data)
-    imgGrafo = geraGrafo(data)
+    imprimirMatriz(instancia, data)
+    imgGrafo = gerarGrafo(data)
 
     salvarDados(instancia, data, imgGrafo)
 
