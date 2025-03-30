@@ -16,4 +16,5 @@ def salvarDados(instancia, data, imgGrafo):
     with open(caminho, "a") as f:
         np.savetxt(f, data, fmt="%d", delimiter=" ")
 
-    imgGrafo.savefig(caminho + f"{instancia}.png")
+    caminho = rf"C:\VsCode\AG (2025-01)\Introducao_Python\PrototipoSoftware\Resultados\{nomePasta}\{instancia}.png"
+    imgGrafo.savefig(caminho)
